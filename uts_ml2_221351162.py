@@ -8,7 +8,7 @@ scaler = joblib.load('scaler.pkl')
 label_encoder = joblib.load('label_encoder.pkl')
 
 # Load model TFLite
-interpreter = tf.lite.Interpreter(model_path="india-rental-house-price.tflite")
+interpreter = tf.lite.Interpreter(model_path="india-rental-house-price(1).tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
